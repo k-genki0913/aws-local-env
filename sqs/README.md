@@ -17,6 +17,8 @@ sqs
 
 aws の認証情報や外部へ公開する情報(ポートなど)を設定できる。
 また、Docker 起動時にキューを自動で設定することも可能。
+(defaultNormalQueue、defaultQueue.fifo を自動設定するように設定
+詳細は custome.conf を確認してください。)
 
 ### Start Docker Container
 
