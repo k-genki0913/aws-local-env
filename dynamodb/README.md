@@ -110,3 +110,27 @@ docker exec -it awscli bash
 ```
 http://localhost:8001
 ```
+
+### aws-cli を用いたテーブル削除
+
+1. Start Docker Container の操作を行う。
+
+2. 下記コマンドを実行し、aws-cli コンテナ内へ入る
+
+```
+docker exec -it awscli bash
+```
+
+3. 【aws-cli コンテナを用いたテーブル作成】でユーザーテーブルを作成する
+
+4. aws-cli コンテナ内で下記コマンドを実行する
+
+```
+./shell/delete-table.sh -T USERS
+```
+
+5. 下記 URL へアクセスし、USERS テーブルが削除されているか確認する
+
+```
+http://localhost:8001
+```
