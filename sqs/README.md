@@ -120,3 +120,13 @@ aws sqs delete-queue --profile elasticMq --endpoint-url=http://localhost:9324 --
 ```
 aws sqs list-queues --profile elasticMq --endpoint-url=http://localhost:9324
 ```
+
+### 実装ファイル
+
+以下のファイルに`aws-sdk for JavaScript v2`を用いて SQS の操作を行う基本的な関数を定義しております。
+
+試したい動作がある場合は`main`関数内のコメントアウトを削除し実行してください。
+
+`sqs/src/sample-v2.js`
+
+※ v3 での動作は検証中です。
