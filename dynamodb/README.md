@@ -8,14 +8,15 @@
 
 ```
 dynamodb
-|-src
-|   |-.aws
-|   |   |-config
-|   |   |-credentials
-|   |-shell
-|   |   |-table-create.sh
-|   |-table-definition
-|   |   |-users.json
+|-aws-cli
+|  |-src
+|     |-.aws
+|     |   |-config
+|     |   |-credentials
+|     |-shell
+|     |-table-create.sh
+|     |-table-definition
+|          |-users.json
 |-docker-compose.yml
 |-Dockerfile
 |-README.md

@@ -30,7 +30,7 @@ services:
     command:
       - /bin/sh
     volumes:
-      - './src:/opt/dynamo/src'
+      - './aws-cli/src:/opt/dynamo/src'
 volumes:
   dynamodb:
     driver: local

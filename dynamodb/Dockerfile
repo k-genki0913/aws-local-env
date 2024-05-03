@@ -14,5 +14,3 @@ RUN yum update -y && yum install -y \
     jq
 
 WORKDIR /opt/dynamo/src
-
-COPY ./src .
