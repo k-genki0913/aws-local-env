@@ -1,0 +1,28 @@
+{
+  "TableName": "USERS",
+  "KeySchema": [
+    {
+      "KeyType": "HASH",
+      "AttributeName": "user_id"
+    },
+    {
+      "KeyType": "RANGE",
+      "AttributeName": "country_code"
+    }
+  ],
+  "AttributeDefinitions": [
+    {
+      "AttributeName": "user_id",
+      "AttributeType": "S"
+    },
+    {
+      "AttributeName": "country_code",
+      "AttributeType": "S"
+    }
+  ],
+  "BillingMode": "PROVISIONED",
+  "ProvisionedThroughput": {
+    "ReadCapacityUnits": 10,
+    "WriteCapacityUnits": 10
+  }
+}
