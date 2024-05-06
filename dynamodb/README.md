@@ -21,6 +21,7 @@ dynamodb
 |-data
 |-src
 |  |-sample-v2.js
+|  |-sample-v3.js
 |  |-package.json
 |  |-package-lock.json
 |
@@ -31,11 +32,17 @@ dynamodb
 
 ### 実装ファイル
 
-以下のファイルに`aws-sdk for JavaScript v2`を用いて SQS の操作を行う基本的な関数を定義しております。
+以下のファイルに`aws-sdk for JavaScript v2`を用いて DynamoDB の操作を行う基本的な関数を定義しております。
 
-試したい動作がある場合は`main`関数ないのコメントアウトを削除し実行してください。
+試したい動作がある場合は`main`関数内のコメントアウトを削除し実行してください。
 
 `dynamodb/src/sample-v2.js`
+
+以下のファイルに`aws-sdk for JavaScript v3`を用いて DynamoDB の操作を行う基本的な関数を定義しております。
+
+試したい動作がある場合は`main`関数内のコメントアウトを削除し実行してください。
+
+`dynamodb/src/sample-v3.js`
 
 ### Start Docker Container
 
