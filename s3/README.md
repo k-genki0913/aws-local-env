@@ -12,6 +12,12 @@ s3
 | README.md
 ```
 
+### Docker 起動時のバケット作成
+
+`docker`起動時に`default-bucket`という名前のバケットが自動で作成されるように設定している。
+起動時にバケットの自動作成の設定は`docker-compose.yml`の
+`mc`コンテナの`entrypoint`で設定しているコマンドで実行しております。
+
 ### Start Docker Container
 
 ```

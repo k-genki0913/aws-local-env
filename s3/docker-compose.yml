@@ -12,3 +12,16 @@ services:
       - '9090:9090'
     volumes:
       - ./data:/data
+  mc:
+    container_name: mc
+    image: minio/mc:RELEASE.2022-12-24T15-21-38Z
+    depends_on:
+      - s3
+    environment:
+      MINIO_ROOT_USER: dummy_access_key
+      MINIO_ROOT_PASSWORD: dummy_secret_access_key
+    entrypoint: >
+      /bin/sh -c "
+      mc alias set s3 http://s3:9000 dummy_access_key dummy_secret_access_key;
+      mc mb --ignore-existing s3/default-bucket;
+      "
