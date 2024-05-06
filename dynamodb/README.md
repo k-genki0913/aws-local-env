@@ -17,10 +17,25 @@ dynamodb
 |     |-table-create.sh
 |     |-table-definition
 |          |-users.json
+|
+|-data
+|-src
+|  |-sample-v2.js
+|  |-package.json
+|  |-package-lock.json
+|
 |-docker-compose.yml
 |-Dockerfile
 |-README.md
 ```
+
+### 実装ファイル
+
+以下のファイルに`aws-sdk for JavaScript v2`を用いて SQS の操作を行う基本的な関数を定義しております。
+
+試したい動作がある場合は`main`関数ないのコメントアウトを削除し実行してください。
+
+`dynamodb/src/sample-v2.js`
 
 ### Start Docker Container
 
