@@ -8,9 +8,32 @@
 
 ```
 s3
+|-data
+|-src
+|  |-image
+|  |  |-sample-image.jpeg
+|  |-package.json
+|  |-package-lock.json
+|  |-sample-v2.js
+|  |-sample-v3.js
+| .gitignore
 | docker-compose.yml
 | README.md
 ```
+
+### 実装ファイル
+
+以下のファイルに`aws-sdk for JavaScript v2`を用いて S3 の操作を行う基本的な関数を定義しております。
+
+試したい動作がある場合は`main`関数内のコメントアウトを削除し実行してください。
+
+`s3/src/sample-v2.js`
+
+以下のファイルに`aws-sdk for JavaScript v3`を用いて DynamoDB の操作を行う基本的な関数を定義しております。
+
+試したい動作がある場合は`main`関数内のコメントアウトを削除し実行してください。
+
+`s3/src/sample-v3.js`
 
 ### Docker 起動時のバケット作成
 
